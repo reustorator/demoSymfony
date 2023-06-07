@@ -1,0 +1,13 @@
+when@dev:
+    _errors:
+        resource: '@FrameworkBundle/Resources/config/routing/errors.xml'
+        prefix: /_error
+api_post_show:
+    path:       /api/products/price/{id}
+    controller: App\Controller\ProductsController::getPrice
+    methods:    GET
+
+api_post_edit:
+    path:       /api/products/sale/{id}
+    controller: App\Controller\ProductsController::executeSale
+    methods:    POST
