@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use App\Controller\PaymentProcessors\PaypalPaymentProcessor;
-use App\Controller\PaymentProcessors\StripePaymentProcessor;
 use Exception;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
