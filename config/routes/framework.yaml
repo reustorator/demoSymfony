@@ -2,12 +2,3 @@ when@dev:
     _errors:
         resource: '@FrameworkBundle/Resources/config/routing/errors.xml'
         prefix: /_error
-api_get_price:
-    path:       /api/products/price/{id}
-    controller: App\Controller\ProductsController::getPrice
-    methods:    GET
-
-api_execute_sale:
-    path:       /api/products/sale/
-    controller: App\Controller\ProductsController::executeSale
-    methods:    POST
