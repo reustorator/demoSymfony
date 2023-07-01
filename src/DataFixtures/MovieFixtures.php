@@ -11,10 +11,10 @@ class MovieFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $movie = new Movie();
-        $movie->setTitle('The Dark Knight');
+        $movie->setTitle('Темный рыцарь');
         $movie->setReleaseYear(2008);
-        $movie->setDescription('This is the description of the Dark Knight');
-        $movie->setImagePath('https://cdn.pixabay.com/photo/2021/06/18/11/22/batman-6345897_960_720.jpg');
+        $movie->setDescription('Это описание для Темного рыцаря');
+        $movie->setImagePath('https://c.wallhere.com/photos/36/4b/Batman_The_Dark_Knight_movies-205234.jpg!d');
         
         //Add Data To Pivot Table
         $movie->addActor($this->getReference('actor_1'));
@@ -23,10 +23,10 @@ class MovieFixtures extends Fixture
         $manager->persist($movie);
 
         $movie2 = new Movie();
-        $movie2->setTitle('Avengers: Endgame');
+        $movie2->setTitle('Мстители:Финал');
         $movie2->setReleaseYear(2019);
-        $movie2->setDescription('This is the description of Avengers: Endgame');
-        $movie2->setImagePath('https://cdn.pixabay.com/photo/2020/07/02/19/36/marvel-5364165_960_720.jpg');
+        $movie2->setDescription('Это описание для Мстители:Финал');
+        $movie2->setImagePath('https://i.playground.ru/p/a8AnsnZ0FQl9KdoH55qqnw.jpeg');
 
         //Add Data To Pivot Table
         $movie2->addActor($this->getReference('actor_3'));

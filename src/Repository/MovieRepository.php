@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Movie;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\NonUniqueResultException;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -19,11 +20,11 @@ class MovieRepository extends ServiceEntityRepository
         parent::__construct($registry, Movie::class);
     }
 
-    // /**
-    //  * @return Movie[] Returns an array of Movie objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * @param $value
+     * @return array
+     */
+    public function findByExampleField($value): array
     {
         return $this->createQueryBuilder('m')
             ->andWhere('m.exampleField = :val')
@@ -34,9 +35,12 @@ class MovieRepository extends ServiceEntityRepository
             ->getResult()
         ;
     }
-    */
 
-    /*
+    /**
+     * @param $value
+     * @return Movie|null
+     * @throws NonUniqueResultException
+     */
     public function findOneBySomeField($value): ?Movie
     {
         return $this->createQueryBuilder('m')
@@ -46,5 +50,5 @@ class MovieRepository extends ServiceEntityRepository
             ->getOneOrNullResult()
         ;
     }
-    */
+
 }
