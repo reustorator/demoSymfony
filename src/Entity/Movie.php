@@ -17,32 +17,32 @@ class Movie
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    public $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $title;
+    public $title;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $releaseYear;
+    public $releaseYear;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $description;
+    public $description;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $imagePath;
+    public $imagePath;
 
     /**
      * @ORM\ManyToMany(targetEntity=Actor::class, inversedBy="movies")
      */
-    private $actors;
+    public $actors;
 
     public function __construct()
     {

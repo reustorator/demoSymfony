@@ -10,6 +10,9 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpExternalFormatter">
+    <option name="externalFormatter" value="PHP_CBF" />
+  </component>
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
@@ -86,6 +89,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
@@ -96,7 +100,7 @@
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
-      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" phpunit_phar_path="" />
     </phpunit_settings>
   </component>
   <component name="PsalmOptionsConfiguration">
